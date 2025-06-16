@@ -1,0 +1,84 @@
+
+/*   
+   This file styles the form inputs, button, and output areas. Also styles
+   the multiplication table, which is  scrollable with sticky headers so the top row
+and first column stay visible. I decided on a overrall pink theme for the site. 
+    The table is white for easier readability, however. 
+*/
+
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 40px;
+  background-color: rgb(243, 212, 217);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(243, 212, 217);
+  color:black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#output {
+  text-align: center;
+  margin-bottom: 20px;
+}
+table {
+  display: block;
+  max-width: 90%;
+  max-height: 400px;
+  overflow: auto;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+th {
+  background-color: #ee649d;
+  font-weight: bold;
+  position: sticky;
+  z-index: 1;
+}
+
+th:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #ee649d;
+  z-index: 2;
+}
+
+tr:first-child th {
+  top: 0;
+  z-index: 3;
+}

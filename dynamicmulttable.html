@@ -1,0 +1,41 @@
+<!-- 
+  Main HTML file for this dynamic multiplication table web app. 
+  It defines the structure of the page, with the form where users input the start and 
+  end values for the rows and columns. The file  links to an external CSS file 
+  for styling and a JavaScript file for functionality.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>&#x2764 dynamic multipliation table &#x2764</title> 
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>&#x2764 dynamic multiplication table &#x2764</h1> #same code for the heart in the title/header
+
+  <form id="multiplicationForm">
+    <label for="startCol">start for horizontal</label>
+    <input type="number" id="startCol" required />
+
+    <label for="endCol">end for horizontal</label>
+    <input type="number" id="endCol" required />
+
+    <label for="startRow">start for vertical </label>
+    <input type="number" id="startRow" required />
+
+    <label for="endRow">end for vertical</label>
+    <input type="number" id="endRow" required />
+
+    <button type="submit">* create your table! *</button>
+  </form>
+
+  <div id="output"></div>
+  <div id="tableContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
